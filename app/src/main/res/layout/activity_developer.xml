@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DeveloperActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile"
+        android:layout_width="@dimen/_90mdp"
+        android:layout_height="@dimen/_90mdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_35mdp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mypicmahmud"
+        app:civ_border_color="@color/miu"
+        app:civ_border_width="@dimen/_1mdp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/design_and_develop"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/profile"
+        android:layout_marginTop="@dimen/_12mdp"
+        android:textSize="@dimen/_13font_mdp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:id="@+id/info"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_name"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/info"
+        android:id="@+id/name"
+        android:layout_marginTop="@dimen/_5mdp"/>
+    <TextView
+        android:id="@+id/batchInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/batch_info"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/name"/>
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1mdp"
+        android:background="@color/black"
+        android:layout_marginLeft="@dimen/_8mdp"
+        android:layout_marginRight="@dimen/_8mdp"
+        android:layout_below="@id/batchInfo"
+        android:layout_marginTop="@dimen/_10mdp"/>
+    <TextView
+        android:id="@+id/thanksText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/thanks_to_teacher"
+        android:layout_below="@id/view1"
+        android:layout_marginTop="@dimen/_8mdp"
+        android:layout_marginStart="@dimen/_17mdp"
+        android:layout_marginEnd="@dimen/_14mdp"
+        android:textColor="@color/black"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1mdp"
+        android:background="@color/black"
+        android:layout_marginLeft="@dimen/_8mdp"
+        android:layout_marginRight="@dimen/_8mdp"
+        android:layout_below="@id/thanksText"
+        android:layout_marginTop="@dimen/_8mdp"
+        android:id="@+id/view2"/>
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contact"
+        android:textSize="@dimen/_14font_mdp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_below="@id/view2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_5mdp"/>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_5mdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_22mdp"
+            android:layout_height="@dimen/_22mdp"
+            android:src="@drawable/ic_email"
+            android:layout_marginStart="@dimen/_17mdp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mahamudulmiu17_gmail_com"
+            android:textSize="@dimen/_13font_mdp"
+            android:textColor="#737373"
+            android:layout_marginStart="@dimen/_10mdp"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

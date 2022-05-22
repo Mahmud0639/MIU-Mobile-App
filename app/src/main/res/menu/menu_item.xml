@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/morer"
+        android:title=""
+        android:icon="@drawable/ic_baseline_more_vert_24"
+        app:showAsAction="always">
+        <menu>
+            <item android:id="@+id/refresh"
+                android:title="@string/refresh"
+                android:icon="@drawable/ic_refresh"
+                app:showAsAction="ifRoom"/>
+            <item android:id="@+id/goHome"
+                android:title="@string/home_page"
+                android:icon="@drawable/ic_home"
+                app:showAsAction="ifRoom"/>
+            <item android:id="@+id/gotoEmsLogin"
+                android:title="@string/miu_portal"
+                android:icon="@drawable/ic_emslogin"
+                app:showAsAction="ifRoom"/>
+            <item android:id="@+id/theme"
+                android:title="@string/light_dark"
+                android:icon="@drawable/ic_dark"
+                app:showAsAction="ifRoom"/>
+            <item android:id="@+id/share"
+                android:title="@string/share"
+                android:icon="@drawable/ic_share"
+                app:showAsAction="ifRoom"/>
+            <item android:id="@+id/rate"
+                android:title="@string/rate_app"
+                android:icon="@drawable/ic_rateus"
+                app:showAsAction="ifRoom"/>
+            <item android:id="@+id/developer"
+                android:title="@string/developer"
+                android:icon="@drawable/ic_developer"
+                app:showAsAction="ifRoom"/>
+
+        </menu>
+
+
+    </item>
+</menu>
