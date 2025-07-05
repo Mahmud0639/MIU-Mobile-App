@@ -76,8 +76,8 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
-                view.loadUrl(url);
-                return true;
+               // view.loadUrl(url);
+                return false;
             }
 
             @Override
@@ -97,8 +97,10 @@ public class MainActivity extends AppCompatActivity {
                 progressBar.setProgress(newProgress);
 
                 if (newProgress == 100) {
+                    progressBar.setVisibility(View.GONE);
                     setTitle(view.getTitle());
                 } else {
+                    progressBar.setVisibility(View.VISIBLE);
                     setTitle("Loading...");
                 }
             }
